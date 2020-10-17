@@ -1,0 +1,160 @@
+/* Configuração Padrão */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #3333;
+}
+
+/* Estilização Header */
+
+
+.header {
+    align-items: center;
+    background-color: #9acd32;
+    display: flex;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+
+/* Alinhamento e configuração imagens */
+
+.Hero-img {
+    display: flex;
+    margin: auto;
+    margin-top: 0.9rem;
+}
+
+.img {
+    margin: 0.9rem;
+}
+
+
+/* Estilização Botões na area de click*/
+ul {
+    list-style: none;
+    margin: 2.0rem;
+    align-items: center;
+}
+
+.Ca {
+    margin-left: 1rem;
+    color: rgb(0, 0, 0);
+    border-left: solid 4px yellowgreen;
+    transition: right, 400ms;
+    border-radius: 5px;
+
+}
+
+.Ca:hover {
+    background-color: #99cd32e3;
+    border-radius: 12px;
+}
+
+.Lo {
+    background-color: #5c5b5b48;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.Lo:hover {
+    transition: 0.9s;
+    background-color: rgba(92, 91, 91, 0.432);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 1.5rem;
+    height: 100px;
+    width: 200px;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+
+/* Estilização da area de click */
+.cad {
+    margin-top: 13px;
+}
+
+.cad h1,
+p {
+    margin-left: 2.4rem;
+    font-size: 1.5rem;
+}
+
+/* Estilização footer */
+.footer {
+    display: flex;
+    font-size: 2px;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin-left: 2.4rem;
+    font-size: 0.5rem;
+}
+
+.footer img {
+    margin-left: 7px;
+}
+
+/* Responsive Grid-Layout */
+@media screen and (min-width: 745px) {
+    .Home {
+
+        align-items: center;
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+            " header header header "
+            " cad Hero-img . "
+            " btn footer . ";
+
+        ;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .cad {
+        grid-area: cad;
+        padding-top: 7rem;
+    }
+
+    .Hero-img {
+        grid-area: Hero-img;
+    }
+
+    .btn {
+        grid-area: btn;
+        padding-top: 1rem;
+        ;
+    }
+
+    .footer {
+        grid-area: footer;
+        padding-left: 110px
+    }
+}
