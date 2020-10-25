@@ -141,7 +141,8 @@ p {
     .cad {
         grid-area: cad;
         padding-top: 7rem;
-    }
+        margin-left: 100px;
+      }
 
     .Hero-img {
         grid-area: Hero-img;
